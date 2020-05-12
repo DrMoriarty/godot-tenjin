@@ -37,10 +37,14 @@ public class GodotTenjin extends Godot.SingletonBase
 		activity = p_activity;
 	}
 
-    public void init(final String _apiKey) {
+    public void init(final String _apiKey, final String _deepLinkUri) {
         apiKey = _apiKey;
         TenjinSDK instance = TenjinSDK.getInstance(activity, apiKey);
-        instance.connect();
+        if(_deepLinkUri != null && _deepLinkUri != "") {
+            instance.connect(_deepLinkUri);
+        } else {
+            instance.connect();
+        }
         Log.i("godot", "Tenjin plugin inited!");
         Log.i("godot", "Device GAID: "+advertising_id());
         instance.getDeeplink(new Callback() {
