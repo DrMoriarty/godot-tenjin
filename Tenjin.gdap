@@ -1,0 +1,11 @@
+[config]
+
+name="Tenjin"
+binary_type="remote"
+binary="ru.mobilap.godot:godot-tenjin:+"
+
+[dependencies]
+
+local=[]
+remote=[]
+custom_maven_repos=["https://dl.bintray.com/mobilap/maven/"]
