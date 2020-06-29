@@ -51,11 +51,11 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['tenjin.jar'])
     implementation 'com.google.android.gms:play-services-analytics:17.0.0'
     implementation 'com.android.installreferrer:installreferrer:1.1'
-    implementation 'com.facebook.android:facebook-applinks:5.+'
+    implementation 'com.facebook.android:facebook-applinks:[5.0,)'
 }
 
 group = 'ru.mobilap.godot'
-version = '0.0.1'
+version = '0.0.2'
 ext {
     artifact = 'godot-tenjin'
 }
