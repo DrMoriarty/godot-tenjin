@@ -89,12 +89,12 @@ public class Tenjin extends GodotPlugin
             tenjinInstance().eventWithNameAndValue(event, ""+value);
     }
 
-    public void logPurchase(final String productId, final String currencyCode, final int quantity, final double unitPrice) {
+    public void logPurchase(final String productId, final String currencyCode, final int quantity, final float unitPrice) {
         if(apiKey != null)
             tenjinInstance().transaction(productId, currencyCode, quantity, unitPrice);
     }
 
-    public void logPurchaseWithSignature(final String productId, final String currencyCode, final int quantity, final double unitPrice, final String purchaseData, final String dataSignature) {
+    public void logPurchaseWithSignature(final String productId, final String currencyCode, final int quantity, final float unitPrice, final String purchaseData, final String dataSignature) {
         if(apiKey != null)
             tenjinInstance().transaction(productId, currencyCode, quantity, unitPrice, purchaseData, dataSignature);
     }
