@@ -2,7 +2,7 @@
 
 name="Tenjin"
 binary_type="remote"
-binary="ru.mobilap.godot:godot-tenjin:+"
+binary="ru.mobilap.godot:godot-tenjin:0.0.2"
 
 [dependencies]
 
