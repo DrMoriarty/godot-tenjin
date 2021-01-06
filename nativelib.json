@@ -1,0 +1,26 @@
+{
+  "name": "tenjin",
+  "description": "Tenjin plugin. Free attribution, Ad Revenue LTV, Cost and ad revenue aggregation.",
+  "version": "0.1.0",
+  "license": "MIT",
+  "url": "https://github.com/DrMoriarty/godot-tenjin",
+  "dependencies": [
+  ],
+  "files": {
+    "scripts": "scripts"
+  },
+  "variables": {
+    "Tenjin/ApiKey": {
+      "info": "Set your API key here"
+    }
+  },
+  "autoload": {
+    "tenjin": "*res://scripts/tenjin.gd"
+  },
+  "platform_android": {
+    "files": {
+      "android-plugin/Tenjin.gdap": "android/plugins/",
+      "android-plugin/build/outputs/aar/Tenjin.release.aar": "android/plugins/"
+    }
+  }
+}
