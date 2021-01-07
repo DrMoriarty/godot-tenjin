@@ -1,7 +1,7 @@
 extends Node
 
 var _tj = null
-onready var _facebook = $'/root/facebook' if node_exists('/root/facebook') else null
+onready var _facebook = $'/root/facebook' if has_node('/root/facebook') else null
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
