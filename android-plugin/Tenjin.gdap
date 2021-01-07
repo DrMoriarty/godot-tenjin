@@ -1,8 +1,8 @@
 [config]
 
 name="Tenjin"
-binary_type="remote"
-binary="ru.mobilap.godot:godot-tenjin:0.0.3"
+binary_type="local"
+binary="Tenjin.release.aar"
 
 [dependencies]
 
