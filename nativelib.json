@@ -1,11 +1,17 @@
 {
   "name": "tenjin",
+  "display_name": "Tenjin attribution",
   "description": "Tenjin plugin. Free attribution, Ad Revenue LTV, Cost and ad revenue aggregation.",
-  "version": "0.1.0",
+  "version": "0.1.1",
+  "godot_version": "3.2.3",
   "license": "MIT",
   "url": "https://github.com/DrMoriarty/godot-tenjin",
-  "dependencies": [
-  ],
+  "category": "misc",
+  "author": {
+    "name": "DrMoriarty",
+    "url": "https://github.com/DrMoriarty",
+    "donate": "https://ko-fi.com/drmoriarty"
+  },
   "files": {
     "scripts": "scripts"
   },
