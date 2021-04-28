@@ -28,7 +28,7 @@ public class Tenjin extends GodotPlugin
     public Tenjin(Godot godot) 
     {
         super(godot);
-        activity = godot;
+        activity = godot.getActivity();
     }
 
     @Override
